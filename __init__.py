@@ -4,7 +4,7 @@ import re
 import urllib.request
 
 from bs4 import BeautifulSoup
-
+import StoreConfig
 url = "https://global.ishadowx.net/"
 data = urllib.request.urlopen(url).read()
 html_doc = data.decode('UTF-8')
@@ -24,6 +24,7 @@ table9 = {}
 table10 = {}
 table11 = {}
 table12 = {}
+tables = [table1, table2, table3, table4, table5, table6, table7, table8, table9, table10, table11, table12]
 for i in range(len(hover_textList)):
     ip = hover_textList[i].find('span', id='ipusa')
     port = hover_textList[i].find('span', id='portusa')
@@ -193,16 +194,6 @@ table10['id'] = str(uuid.uuid4()).upper().replace('-', '')
 table11['id'] = str(uuid.uuid4()).upper().replace('-', '')
 table12['id'] = str(uuid.uuid4()).upper().replace('-', '')
 
-print(table1)
-print(table2)
-print(table3)
-print(table4)
-print(table5)
-print(table6)
-print(table7)
-print(table8)
-print(table9)
-print(table10)
-print(table11)
-print(table12)
-print(str(uuid.uuid1()).upper().replace('-', ''))
+StoreConfig.updateStr(tables)
+# print(tables)
+
