@@ -1,4 +1,4 @@
-text = 'this is may\n text'
+import win32api
 
 
 def updateStr(tables):
@@ -44,3 +44,4 @@ def updateStr(tables):
     input.close()
     file_object.close()
 
+    win32api.ShellExecute(0, 'open', '.\ShadowsocksR-dotnet4.0.exe', '', '', 0)

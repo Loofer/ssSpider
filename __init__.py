@@ -1,16 +1,29 @@
-# encoding:UTF-8
+# -*- coding: utf8 -*-
 import uuid
 import re
 import urllib.request
 
 from bs4 import BeautifulSoup
 import StoreConfig
+
+import os
+ret = 1
+
+ret = os.system('tasklist /FI "IMAGENAME eq ShadowsocksR-dotnet4.0.exe"')
+if ret == 0:
+    print(u'目标进程存在，杀死该进程')
+    os.system('TASKKILL /F /IM ShadowsocksR-dotnet4.0.exe"')
+    ret = 1
+else:
+    print(u'目标进程不存在')
+
 url = "https://global.ishadowx.net/"
 data = urllib.request.urlopen(url).read()
 html_doc = data.decode('UTF-8')
 soup = BeautifulSoup(html_doc, 'html.parser')
 containerDiv = soup.find('div', class_='portfolio-items')
 hover_textList = containerDiv.find_all('div', class_='hover-text')
+
 
 table1 = {}
 table2 = {}
@@ -196,4 +209,4 @@ table12['id'] = str(uuid.uuid4()).upper().replace('-', '')
 
 StoreConfig.updateStr(tables)
 # print(tables)
-
+# os.system('.\ShadowsocksR-dotnet4.0.exe')
