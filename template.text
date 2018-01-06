@@ -1,0 +1,43 @@
+
+	],
+	"index" : 0,
+	"random" : true,
+	"sysProxyMode" : 2,
+	"shareOverLan" : false,
+	"localPort" : 1080,
+	"localAuthPassword" : "URlA2crtfWbjuP5u7ZgM",
+	"dnsServer" : "",
+	"reconnectTimes" : 2,
+	"randomAlgorithm" : 3,
+	"randomInGroup" : false,
+	"TTL" : 0,
+	"connectTimeout" : 5,
+	"proxyRuleMode" : 2,
+	"proxyEnable" : false,
+	"pacDirectGoProxy" : false,
+	"proxyType" : 0,
+	"proxyHost" : null,
+	"proxyPort" : 0,
+	"proxyAuthUser" : null,
+	"proxyAuthPass" : null,
+	"proxyUserAgent" : null,
+	"authUser" : null,
+	"authPass" : null,
+	"autoBan" : false,
+	"sameHostForSameTarget" : false,
+	"keepVisitTime" : 180,
+	"isHideTips" : false,
+	"nodeFeedAutoUpdate" : true,
+	"serverSubscribes" : [
+		{
+			"URL" : "ss://cmM0LW1kNToyMzkzMTg4OUBiLnVzaXAucHJvOjgzODg=#ss.ishadowx.com 1",
+			"Group" : ""
+		}
+	],
+	"token" : {
+
+	},
+	"portMap" : {
+
+	}
+}
