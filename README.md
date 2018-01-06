@@ -9,4 +9,5 @@ clone 好后，放到 ss 根目录每次运行 __init__.py 即可
 # 同步地址
 
 ***[Github](https://github.com/Loofer/ssSpider)***
+
 ***[OsChina](https://gitee.com/loofer/ssSpider)***
